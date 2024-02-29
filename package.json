@@ -9,6 +9,7 @@
   "author": "Marko Vojinovic",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.6.6"
+    "cypress": "^13.6.1",
+    "cypress-file-upload": "^5.0.8"
   }
 }

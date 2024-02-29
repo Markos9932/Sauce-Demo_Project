@@ -1,4 +1,3 @@
-
 import 'cypress-file-upload'
 
 export default class Commands {
