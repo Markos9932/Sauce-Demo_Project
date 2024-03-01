@@ -5,9 +5,6 @@ export default class Inventory_item extends Commands {
   constructor() {
     super();
     this.cartButtonLocator = 'div#shopping_cart_container > .shopping_cart_link';
-    
-
-
   }
 
   /**
@@ -18,20 +15,4 @@ export default class Inventory_item extends Commands {
     this.clickOnElement(this.cartButtonLocator);
   }
 
-    
-  
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-}
+  }

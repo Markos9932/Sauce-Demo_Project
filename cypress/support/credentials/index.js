@@ -5,6 +5,4 @@ export const USERS = {
     preformance_glitch_user: 'performance',
     error_user: 'error',
     visual_user: 'visual'
-
-  
 };

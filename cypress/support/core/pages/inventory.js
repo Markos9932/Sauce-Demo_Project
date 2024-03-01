@@ -5,15 +5,14 @@ export default class Inventory extends Commands {
   constructor() {
     super();
     this.inventoryRoute = '**/static/media/menu3x.52cc17a3.svg';
-    this.addToCartBoltShirt = '#add-to-cart-sauce-labs-bolt-t-shirt';
+    this.productContainer = '.inventory_item_description';
     this.shoppingCartBadge = '.shopping_cart_badge';
     this.itemNameLocator = '.inventory_item_name ';
-    
-
-
+    this.openMenybutton = 'button#react-burger-menu-btn';
+    this.logoutButton = 'a#logout_sidebar_link';
+    this.buttonLocator = '.pricebar'
   }
 
-    
     /**
     * Inventory loading state
     * @returns {void} void
@@ -34,11 +33,11 @@ export default class Inventory extends Commands {
   }
 
   /**
-   * Clicks add to cart for the Bolt shirt button
+   * Clicks add to cart for product
    * @returns {void} void
    */
-  clickAddToCartBoltShirtButton() {
-    this.clickOnElement(this.addToCartBoltShirt);
+  clickAddToCartButton(text, button) {
+    this.clickOnButtonInContainer(this.productContainer, this.buttonLocator, text, button);
   }
 
   /**
@@ -50,27 +49,27 @@ export default class Inventory extends Commands {
   }
 
   /**
-   * Click on Sauce Bike Light Product
+   * Click on text of product name
    * @returns {void} void
    */
-  clickOnSouceLabsBikeLight(value) {
+  clickOnProductText(value) {
     this.clickOnElementWithText(this.itemNameLocator, value);
   }
 
-  
+  /**
+   * Clicks on open meny button
+   * @returns {void} void
+   */
+  clickOnOpenMenyButton() {
+    this.clickOnElement(this.openMenybutton);
+  }
 
-
-
-
-
-
-
-  
-
-
-
-
-
-
+  /**
+   * Clicks on logout button
+   * @returns {void} void
+   */
+  clickOnLogoutButton() {
+    this.clickOnElement(this.logoutButton);
+  }
 
 }

@@ -8,9 +8,6 @@ export default class Login extends Commands {
     this.usernameField = '#user-name';
     this.passwordField = '#password';
     this.loginButton = '#login-button';
-
-   
-  
   }
 
   /**
@@ -64,15 +61,4 @@ export default class Login extends Commands {
         this.clickLoginButton();
       });
   }
-
-
-
-  
-
-
-
-
-
-
-
 }
