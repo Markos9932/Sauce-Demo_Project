@@ -20,10 +20,11 @@ module.exports = defineConfig({
     },
     mochaJunitReporterReporterOptions: {
       mochaFile: 'cypress/reports/junit/results-[hash].xml',
-    },
+     },
   },
 
   e2e: {
+    chromeWebSecurity: false,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },

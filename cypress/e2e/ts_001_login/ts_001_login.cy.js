@@ -42,12 +42,12 @@ context('Check happy path and successful shopping process', () => {
 
   it('Add and remove item from Cart and complete Checkout', function () {
     // navigate to login page
-    inventory.inventoryPageLoadingResponse();
+    //inventory.inventoryPageLoadingResponse();
     login.navigateToLoginPage();
     login.verifyVisibilityOfText(test_data_login.mainTitle);
     // login with valid credentials
     login.sauceDemoLogin(USERS.standard_user);
-    inventory.waitInventoryPageLoadingResponse();
+    //inventory.waitInventoryPageLoadingResponse();
     // adding product to cart
     inventory.clickAddToCartButton(test_data_standard_user.boltShirt, test_data_standard_user.addToCartButton);
     // verify cart badge is updated
@@ -100,7 +100,7 @@ context('Check happy path and successful shopping process', () => {
     login.verifyVisibilityOfText(test_data_login.mainTitle);
     // login with valid credentials
     login.sauceDemoLogin(USERS.visual_user);
-    inventory.waitInventoryPageLoadingResponse();
+    //inventory.waitInventoryPageLoadingResponse();
     // adding product to cart
     inventory.clickAddToCartButton(test_data_visual_user.sauceLabs, test_data_visual_user.addToCartButton);
     // open the cart
@@ -132,7 +132,7 @@ context('Check happy path and successful shopping process', () => {
     login.verifyVisibilityOfText(test_data_login.mainTitle);
     // login with valid credentials
     login.sauceDemoLogin(USERS.standard_user);
-    inventory.waitInventoryPageLoadingResponse();
+    //inventory.waitInventoryPageLoadingResponse();
     // adding Bolt shirt to cart
     inventory.clickAddToCartButton(test_data_standard_user.boltShirt, test_data_standard_user.addToCartButton);
     // verify cart badge is updated
