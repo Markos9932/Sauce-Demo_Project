@@ -8,7 +8,7 @@ export default class Cart extends Commands {
     this.checkoutButton = '#checkout';
     this.removeShirtLocator = '[data-test="remove-sauce-labs-bolt-t-shirt"]';
     this.removeSauceLabs = '[data-test="remove-sauce-labs-onesie"]'
-  }
+}
 
   /**
    * Verify product is in the cart

@@ -4,12 +4,15 @@
   "description": "Cypress Automation Framework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lints": "eslint --fix --ext .js,.jsx ."
   },
   "author": "Marko Vojinovic",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.6.1",
-    "cypress-file-upload": "^5.0.8"
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1"
   }
 }
