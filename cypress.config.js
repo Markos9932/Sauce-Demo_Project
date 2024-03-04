@@ -8,20 +8,8 @@ module.exports = defineConfig({
     defaultCommandTimeout: 7000,
     requestTimeout: 10000,
     responseTimeout: 30000,
-    reporter: 'cypress-multi-reporters',
-    reporterOptions: {
-        reporterEnabled: 'cypress-mochawesome-reporter, mocha-junit-reporter',
-        cypressMochawesomeReporterReporterOptions: {
-            reportDir: 'cypress/reports',
-            charts: true,
-            reportPageTitle: 'Test Suite Report',
-            embeddedScreenshots: true,
-            inlineAssets: true,
-        },
-        mochaJunitReporterReporterOptions: {
-            mochaFile: 'cypress/reports/junit/results-[hash].xml',
-        },
-    },
+   
+    
 
     e2e: {
         chromeWebSecurity: false,

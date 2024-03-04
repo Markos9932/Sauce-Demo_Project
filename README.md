@@ -28,6 +28,24 @@ If you want to run tests on UI, issue:
 npx cypress open
 ```
 
+If you want to run all tests, issue:
+
+```bash
+npm test
+```
+
+If you want to run tests in headless, issue:
+
+```bash
+npm run test:headless
+```
+
+If you want to run specific test suite, issue:
+
+```bash
+npm run test:specific  (in order to run specific test suite, you can add path to file in a test script in a package.json)
+```
+
 
 
 [Cypress]:                              https://www.cypress.io/

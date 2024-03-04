@@ -4,7 +4,8 @@
   "description": "Cypress Automation Framework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-open": "cypress open",
+    "test-run": "cypress run",
     "lints": "eslint --fix --ext .js,.jsx ."
   },
   "author": "Marko Vojinovic",
