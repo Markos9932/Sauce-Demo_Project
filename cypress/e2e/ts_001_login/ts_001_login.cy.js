@@ -42,12 +42,10 @@ context('Check happy path and successful shopping process', () => {
 
   it('Add and remove item from Cart and complete Checkout', function () {
     // navigate to login page
-    //inventory.inventoryPageLoadingResponse();
     login.navigateToLoginPage();
     login.verifyVisibilityOfText(test_data_login.mainTitle);
     // login with valid credentials
     login.sauceDemoLogin(USERS.standard_user);
-    //inventory.waitInventoryPageLoadingResponse();
     // adding product to cart
     inventory.clickAddToCartButton(test_data_standard_user.boltShirt, test_data_standard_user.addToCartButton);
     // verify cart badge is updated
@@ -88,19 +86,16 @@ context('Check happy path and successful shopping process', () => {
     checkout_complete.verifyVisibilityOfText(test_data_standard_user.orderReview);
     checkout_complete.clickOnBackHomeButton();
     // logout of user
-    //inventory.waitInventoryPageLoadingResponse();// commented because doesn't working
     inventory.clickOnOpenMenyButton();
     inventory.clickOnLogoutButton();
   });
 
   it('Add idem to Cart and verify badge Update with different user', function () {
     // navigate to login page
-    inventory.inventoryPageLoadingResponse();
     login.navigateToLoginPage();
     login.verifyVisibilityOfText(test_data_login.mainTitle);
     // login with valid credentials
     login.sauceDemoLogin(USERS.visual_user);
-    //inventory.waitInventoryPageLoadingResponse();
     // adding product to cart
     inventory.clickAddToCartButton(test_data_visual_user.sauceLabs, test_data_visual_user.addToCartButton);
     // open the cart
@@ -120,19 +115,16 @@ context('Check happy path and successful shopping process', () => {
     // cancel the order (if I continue to finish button, there will be a bug-successfully checkout complete)
     checkout_step_two.clickOnCancelButton();
     // logout of user
-    //inventory.waitInventoryPageLoadingResponse();// commented because doesn't working
     inventory.clickOnOpenMenyButton();
     inventory.clickOnLogoutButton();
   });
 
   it('Add multiple Items to Cart and Verify Content', function () {
     // navigate to login page
-    inventory.inventoryPageLoadingResponse();
     login.navigateToLoginPage();
     login.verifyVisibilityOfText(test_data_login.mainTitle);
     // login with valid credentials
     login.sauceDemoLogin(USERS.standard_user);
-    //inventory.waitInventoryPageLoadingResponse();
     // adding Bolt shirt to cart
     inventory.clickAddToCartButton(test_data_standard_user.boltShirt, test_data_standard_user.addToCartButton);
     // verify cart badge is updated
@@ -173,7 +165,6 @@ context('Check happy path and successful shopping process', () => {
     checkout_complete.verifyVisibilityOfText(test_data_standard_user.orderReview);
     checkout_complete.clickOnBackHomeButton();
     // logout of user
-    //inventory.waitInventoryPageLoadingResponse();// commented because doesn't working
     inventory.clickOnOpenMenyButton();
     inventory.clickOnLogoutButton();
   });

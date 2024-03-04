@@ -4,16 +4,15 @@
   "description": "Cypress Automation Framework",
   "main": "index.js",
   "scripts": {
-    "test-open": "cypress open",
-    "test-run": "cypress run",
-    "lints": "eslint --fix --ext .js,.jsx ."
+    "test": "cypress run",
+    "cypress:open": "cypress open",
+    "test:headless": "cypress run --headless",
+    "cypress:runChrome": "cypress run --browser chrome",
+    "test:specific-ts_001_login": "cypress run --spec cypress/e2e/ts_001_login/ts_001_login.cy.js --headless"
   },
   "author": "Marko Vojinovic",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.6.1",
-    "eslint": "^8.57.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.29.1"
-  }
+    "cypress": "^13.6.1"
+    }
 }
