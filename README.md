@@ -19,13 +19,13 @@ npm install
 Then, in order to run all tests in console, issue:
 
 ```bash
-npx cypress run
+npm run test
 ```
 
 If you want to run tests on UI, issue:
 
 ```bash
-npx cypress open
+npm run cypress:open
 ```
 
 If you want to run all tests, issue:
